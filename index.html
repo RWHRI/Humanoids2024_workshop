@@ -11,7 +11,7 @@
 	    background-image: url("robothuman_boxcarry.jpeg");
 	    background-size: cover;
 	    background-position: center;
-	    opacity: 0.8;
+	    opacity: 0.85;
         }
         .navbar {
             margin-bottom: 20px;
@@ -28,6 +28,19 @@
         .schedule {
             display: none;
         }
+	
+        /* Styles for all  jumbotron */
+        .jumbotron {
+            background-color: #ddffff; /* Lighter blue background for Program */
+	}
+
+        /* Styles for the "Home" jumbotron */
+	.home-jumbotron {
+            background-color: #ddffff; /* Light blue background for Home */
+	}
+
+	
+
     </style>
 </head>
 <body>
@@ -48,6 +61,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="showSection('speakers')">Speakers</a>
             </li>
+	    <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('contributions')">Call for Contributions</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="showSection('contact')">Contact</a>
             </li>
@@ -56,7 +72,7 @@
 </nav>
 
 <div class="container" id="home">
-    <div class="jumbotron">
+    <div class="jumbotron home-jumbotron">
         <h1 class="display-4">Workshop on Real World Physical and Social Human-Robot Interaction</h1>
         <p class="lead">Humanoids 2024</p>
         <hr class="my-4">
@@ -69,6 +85,7 @@
 </div>
 
 <div class="container schedule" id="program">
+ <div class="jumbotron">
     <h2>Program Schedule</h2>
     <table class="table table-bordered">
         <thead>
@@ -125,7 +142,7 @@
             </tr>
             <tr>
                 <td>16:15 - 17:15</td>
-                <td>Panel Discussion How to reconcile Academia and Industry’s approach to HRI? (40 min + 20 min Q/A)</td>
+                <td>Panel Discussion on How to reconcile Academia and Industry’s approach to HRI? (40 min + 20 min Q/A)</td>
             </tr>
             <tr>
                 <td>17:15 - 17:30</td>
@@ -133,14 +150,25 @@
             </tr>
         </tbody>
     </table>
+ </div>
 </div>
 
 <div class="container schedule" id="speakers">
+ <div class="jumbotron">
     <h2>Speakers</h2>
     <p>Meet our esteemed speakers from academia and industry.</p>
+ </div>
+</div>
+
+<div class="container schedule" id="contributions">
+ <div class="jumbotron">
+    <h2>Call for Contributions</h2>
+    <p>TBD</p>
+ </div>
 </div>
 
 <div class="container schedule" id="contact">
+ <div class="jumbotron">
     <h2>Contact</h2>
     <p><strong>Organizers:</strong></p>
     <p>Elmira Yadollahi, Assistant Professor, Lancaster University, United Kingdom: <a href="mailto:e.yadollahi@lancaster.ac.uk">e.yadollahi@lancaster.ac.uk</a></p>
@@ -149,8 +177,8 @@
     <p>Angela Faragasso, Lead Researcher Engineer, Finger Vision Inc., Japan: <a href="mailto:angela.faragaso@fingervision.biz">angela.faragaso@fingervision.biz</a></p>
     <p>Barbara Bruno, Junior Professor, Karlsruhe Institute of Technology, Germany: barbara.bruno@kit.edu</p>
     <p>Christian Smith, Associate Professor, KTH Royal Institute of Technology, Sweden: <a href="mailto:ccs@kth.se">ccs@kth.se</a></p>
+ </div>
 </div>
-
 <div class="footer">
     <p>&copy; 2024 Humanoids RW-HRI. All rights reserved.</p>
 </div>
