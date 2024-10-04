@@ -39,6 +39,20 @@
             background-color: #ddffff; /* Light blue background for Home */
 	}
 
+	.speaker-img {
+        width: 200px; /* Set a fixed width */
+        height: 200px; /* Set a fixed height */
+        object-fit: contain; /* Ensures the image is properly cropped */
+        border-radius: 50%; /* Optional: Make the images circular */
+        display: block;
+        margin: 0 auto 10px; /* Center the image */
+        }
+
+        .speaker-card {
+        text-align: center; /* Center text and image */
+        margin-bottom: 30px;
+       }
+
 	
 
     </style>
@@ -154,10 +168,54 @@
 </div>
 
 <div class="container schedule" id="speakers">
- <div class="jumbotron">
-    <h2>Speakers</h2>
-    <p>Meet our esteemed speakers from academia and industry.</p>
- </div>
+<div class="jumbotron home-jumbotron">
+        <h2>Speakers</h2>
+        <p>Meet our esteemed speakers from academia and industry.</p>
+    
+
+    <div class="row">
+        <!-- Speaker 1 -->
+        <div class="col-md-6">
+            <div class="speaker-card">
+                <img src="katja.jpeg" alt="Katja Mombaur" class="speaker-img">
+                <h3>Katja Mombaur</h3>
+                <p>Professor, Karlsruhe Institute of Technology, Germany, and University of Waterloo, Canada</p>
+                <p><strong>Presentation:</strong> TBD</p>
+            </div>
+        </div>
+
+        <!-- Speaker 2 -->
+        <div class="col-md-6">
+            <div class="speaker-card">
+                <img src="enrico.jpg" alt="Enrico Mingo Hoffman" class="speaker-img">
+                <h3>Enrico Mingo Hoffman</h3>
+                <p>ISFP Researcher, Centre Inria de l'Université de Lorraine & Loria, Nancy, France</p>
+                <p><strong>Presentation:</strong> "OpenSoT: A Software Tool for Advanced Whole-Body Control"</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Speaker 3 -->
+        <div class="col-md-6">
+            <div class="speaker-card">
+                <img src="path_to_quentin_rouxel_photo.jpg" alt="Quentin Rouxel" class="speaker-img">
+                <h3>Quentin Rouxel</h3>
+                <p>Postdoctoral Researcher, Centre Inria de l'Université de Lorraine & Loria, Nancy, France</p>
+                <p><strong>Presentation:</strong> "LLMs, Diffusion and Humanoid Robots: Natural Language and Imitation Learning for Contact Interaction"</p>
+            </div>
+        </div>
+
+        <!-- Speaker 4 -->
+        <div class="col-md-6">
+            <div class="speaker-card">
+                <img src="palrobotics.png" alt="Pal Robotics" class="speaker-img">
+                <h3>Pal Robotics</h3>
+                <p><strong>Presentation:</strong> TBD</p>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 <div class="container schedule" id="contributions">
