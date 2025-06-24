@@ -398,6 +398,14 @@
     </div>
  </div>
 </div>
+
+<div class="container" id="gallery">
+    <div class="jumbotron">
+        <h2>Image Gallery</h2>
+        <div class="row" id="image-container"></div>
+    </div>
+</div>
+	
 <div class="footer">
     <p>&copy; 2024 Humanoids RW-HRI. All rights reserved.</p>
 </div>
@@ -418,5 +426,25 @@
     // Show the home section by default
     showSection('home');
 </script>
+
+<script>
+    fetch('images.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('image-container');
+            data.forEach(image => {
+                const col = document.createElement('div');
+                col.className = 'col-md-3 mb-4';
+                col.innerHTML = `
+                    <div class="card">
+                        <img src="${image.src}" class="card-img-top" alt="${image.alt}">
+                    </div>
+                `;
+                container.appendChild(col);
+            });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+</script>
+
 </body>
 </html>
